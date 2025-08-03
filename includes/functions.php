@@ -123,7 +123,14 @@ function uploadFile($file, $articleId = null) {
     $allowedTypes = [
         'image/jpeg', 'image/png', 'image/gif', 'image/webp',
         'application/pdf', 'text/plain', 'application/msword',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'application/vnd.ms-excel',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        'application/vnd.ms-powerpoint',
+        'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+        'application/vnd.ms-word',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'text/plain'
     ];
     
     if (!in_array($file['type'], $allowedTypes)) {

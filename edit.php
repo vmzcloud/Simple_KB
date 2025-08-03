@@ -248,7 +248,7 @@ $files = getFilesByArticle($id);
                             <small class="text-muted">Supports images, PDFs, documents (max 10MB each)</small>
                         </div>
                         <input type="file" id="file-input" name="files[]" multiple style="display: none" 
-                               accept="image/*,.pdf,.txt,.doc,.docx">
+                               accept="image/*,.pdf,.txt,.doc,.docx,.xls,.xlsx,.ppt,.pptx">
                         <div class="uploaded-files" id="uploaded-files"></div>
                     </div>
 
